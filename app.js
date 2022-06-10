@@ -14,7 +14,7 @@ app.use((req, res, next) => {
     next();
   });
   app.use(myrouter);
-  app.listen(8000);
+  //app.listen(8000);
   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true },function(err, db) {
      if (err) throw err;
     db.db();
